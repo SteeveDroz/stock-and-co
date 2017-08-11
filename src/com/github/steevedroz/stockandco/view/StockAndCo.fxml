@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+
+<?import com.github.steevedroz.stockandco.controller.Graph?>
+<?import com.github.steevedroz.stockandco.controller.ToolBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<fx:root xmlns:fx="http://javafx.com/fxml" type="BorderPane">
+	<center>
+		<Graph fx:id="graph" />
+	</center>
+	<left>
+		<ToolBox fx:id="toolBox" />
+	</left>
+	<bottom>
+		<HBox>
+			<Button onAction="#up" text="↑" />
+			<Button onAction="#down" text="↓" />
+			<Label fx:id="tendency" text="-" prefWidth="50" />
+			<Button onAction="#buyOne" text="Buy 1" />
+			<Button onAction="#buyAll" text="Buy all" />
+			<Button onAction="#sellOne" text="Sell 1" />
+			<Button onAction="#sellAll" text="Sell all" />
+			<Button onAction="#improveImpact" text="Improve impact" />
+		</HBox>
+	</bottom>
+</fx:root>

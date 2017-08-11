@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<fx:root hgap="10.0" type="GridPane" vgap="10.0"
+	xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1"
+	onMouseClicked="#click">
+	<Label text="Company:" />
+	<Label fx:id="name" text="XXX" GridPane.columnIndex="1" />
+	<Label text="Owned:" GridPane.rowIndex="1" />
+	<Label fx:id="owned" text="0/0 (+0.00)" GridPane.columnIndex="1"
+		GridPane.rowIndex="1" />
+	<columnConstraints>
+		<ColumnConstraints />
+		<ColumnConstraints />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints />
+		<RowConstraints />
+	</rowConstraints>
+</fx:root>
